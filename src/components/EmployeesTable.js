@@ -37,7 +37,8 @@ class EmployeesTable extends Component {
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Image</th>
-                        <th scope="col">Name</th>
+                        <th scope="col" className="clickable" title="Sort alphabetically" 
+                            onClick={() => this.props.sortAlpha(this.props.employees)}>Name {this.props.sortArrow}</th>
                         <th scope="col">Phone</th>
                         <th scope="col">Email</th>
                         <th scope="col">DOB</th>

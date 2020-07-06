@@ -22,6 +22,6 @@ header.jumbotron.jumbotron-fluid p {
     margin: 0 auto;
 }
 
-.up-arrow {
-    content: '\25BC';
+.clickable {
+    cursor: pointer;
 }
