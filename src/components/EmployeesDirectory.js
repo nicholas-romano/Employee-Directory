@@ -7,7 +7,8 @@ import API from "../utils/API";
 class EmployeesDirectory extends Component {
 
     state = {
-        employees: []
+        employees: [],
+        query: ''
     };
 
     componentDidMount() {
