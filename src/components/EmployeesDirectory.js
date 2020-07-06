@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from './Header';
+import Search from './Search';
 import EmployeesTable from './EmployeesTable';
 import API from "../utils/API";
 
@@ -42,6 +43,36 @@ class EmployeesDirectory extends Component {
         })
     }
 
+     //Filter by search input:
+     filterByName = event => {
+
+        const query = event.target.value;
+
+         this.setState({
+            query
+        }, () => {
+
+            const employeesList = this.state.employees;
+           
+            //add display: true/false to display the record if it matches the search string:
+            const newEmployeeTable = employeesList.map(employee => {
+                let name = employee.name.toLowerCase();
+
+                if (name.indexOf(this.state.query.toLowerCase()) !== -1) {
+                    return {...employee, display: true}
+                } else {
+                    return {...employee, display: false}
+                }
+            });
+
+            this.setState({
+                employees: newEmployeeTable,
+            });
+
+        });
+
+    }
+
     render() {
 
         const employeesList = this.state.employees;
@@ -49,6 +80,7 @@ class EmployeesDirectory extends Component {
         return(
             <>
                 <Header />
+                <Search filterByName={this.filterByName} query={this.state.query} />
                 <EmployeesTable employees={employeesList} />
             </>
         );

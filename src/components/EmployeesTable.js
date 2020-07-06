@@ -3,6 +3,32 @@ import Employee from './Employee';
 
 class EmployeesTable extends Component {
 
+    renderEmployee = (employee, index) => {
+
+        let displayed;
+
+        if (employee.display === undefined) {
+            displayed = true;
+        } else {
+            displayed = employee.display;
+        }
+
+        if (displayed === true) {
+            return (
+                <Employee 
+                    key={index}
+                    order={index + 1}
+                    image={employee.image}
+                    name={employee.name}
+                    phone={employee.phone}
+                    email={employee.email}
+                    dob={employee.dob}
+                />
+            );
+        }
+
+    }
+
     render(props) {
         
         return (
@@ -20,15 +46,7 @@ class EmployeesTable extends Component {
                 <tbody>
                     {
                         this.props.employees.map((employee, index) => (
-                            <Employee 
-                                key={index}
-                                order={index + 1}
-                                image={employee.image}
-                                name={employee.name}
-                                phone={employee.phone}
-                                email={employee.email}
-                                dob={employee.dob}
-                            />
+                            this.renderEmployee(employee, index)
                         ))
                     }
                 </tbody>
