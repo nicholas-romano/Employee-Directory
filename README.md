@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Employee-Directory &middot; ![npm](https://img.shields.io/badge/npm-6.14.5-blue) ![axios](https://img.shields.io/badge/axios-0.19.2-blue) ![react](https://img.shields.io/badge/react-16.13.1-blue) ![react-dom](https://img.shields.io/badge/react-dom-16.13.1-blue) ![react-router-dom](https://img.shields.io/badge/react-router-dom-5.2.0-blue) ![react-scripts](https://img.shields.io/badge/react-scripts-3.4.1-blue) 
 
-## Available Scripts
+![Employee-Directory](/images/Employee-Directory.png) 
 
-In the project directory, you can run:
+## Description 
+The Employee Directory uses the Random User API to generate user data for a total of 50 users into a table. The application gives the user the capability to search for an employee by name by typing in the search box and sorting the employees alphabetically by clicking on the Name column heading. 
 
-### `yarn start`
+## Table of Contents 
+* [Installation](#installation) 
+* [Usage](#usage) 
+* [Third Party Contributors](#third-party-contributors) 
+* [License](#license) 
+* [Questions](#questions) 
+ 
+## Installation 
+1.  Install node: go to nodejs.org and download latest version and walk through the installation instructions.  
+2.  Go to project folder and enter: npm install to install all dependencies in the package.json file.  
+3.  Run server on port 3000 by entering npm start.  
+ 
+## Usage 
+1.  When the application loads up, a list of 50 employees is generated using artificial personal data from the Random user API -  [randomuser.me](https://randomuser.me) and the user will see a blue heading with a title and brief instructions on how to interact with the user interface. ![Employee-Directory-Heading](/images/Employee-Directory-Heading.png) 
+2.  Typing in the search box below the heading will filter the list by only displaying the employee name that contain the search letters entered. For example, typing the letters “ca” will filter the list of users to only display those that have a “ca” in their names. ![Employee-Directory-Search-Box-Filter](/images/Employee-Directory-Search-Box-Filter.png) 
+3.  Clicking on the “Name” column heading in the table will sort the displayed list in alphabetical order. The black down arrow next to the column heading indicates that it sorted the list alphabetically. ![Employee-Directory-Search-Box-Filter](/images/Employee-Directory-Search-Box-Filter.png)  
+4.  Clicking this heading again will sort the list in reverse alphabetical order displaying a black up arrow next to the heading rather than the down arrow. ![Employee-Directory-Reverse-Alpha-Sort](/images/Employee-Directory-Reverse-Alpha-Sort.png) All subsequent clicks on this heading will toggle the list between alphabetical order and reverse alphabetical order.   
+ 
+## Third Party Contributors 
+Random User API [randomuser.me](https://randomuser.me) provided the artificial employee data.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## License 
+There is not a license for this application. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Questions 
+![GitHub Profile Image](https://avatars.githubusercontent.com/u/6642173?) 
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+ njr7romano@yahoo.com
