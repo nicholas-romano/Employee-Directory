@@ -1,5 +1,7 @@
 # Employee-Directory &middot; ![npm](https://img.shields.io/badge/npm-6.14.5-blue) ![axios](https://img.shields.io/badge/axios-0.19.2-blue) ![react](https://img.shields.io/badge/react-16.13.1-blue) ![react-dom](https://img.shields.io/badge/reactdom-16.13.1-blue) ![react-router-dom](https://img.shields.io/badge/reactrouterdom-5.2.0-blue) ![react-scripts](https://img.shields.io/badge/reactscripts-3.4.1-blue) 
 
+[https://business-employee-directory.netlify.app/](https://business-employee-directory.netlify.app/)
+
 ![Employee-Directory](/public/images/Employee-Directory.png) 
 
 ## Description 
